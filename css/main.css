@@ -1,0 +1,104 @@
+/* main style */
+:root {
+  --bg-color: #f9f9fb;
+  --primary-text: #171717;
+  --secondary-text: #7f7f80;
+  --call-action: #6b6af4;
+  --primary-item: #4c4bef;
+  --secondary-item: #4c4befcc;
+  --button-color: #6a69f5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-text) !important;
+  overflow-x: hidden !important;
+}
+
+.bg-main {
+  position: absolute;
+  background-color: var(--bg-color) !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.light-text {
+  color: var(--secondary-text) !important;
+  font-weight: 400;
+}
+
+.primary-item {
+  background-color: var(--primary-item) !important;
+}
+
+.secondary-item {
+  background-color: var(--secondary-item) !important;
+}
+
+/* end of main style */
+
+/* navbar */
+.btn-port {
+  background-color: var(--button-color) !important;
+  color: white;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  /* filter: blur(0.3px); */
+  outline: none !important;
+}
+.top-nav {
+  position: fixed;
+  width: 80%;
+}
+
+/* end of navbar */
+
+.full {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* hero title */
+.hero {
+  text-align: center;
+  transform: translate(0%, 150%);
+}
+.hero .display-4 {
+  font-weight: 500;
+}
+
+/* Waves */
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.waves .front-wave,
+.waves .back-wave,
+.waves .pattern7x7 {
+  bottom: 0;
+  position: absolute;
+  overflow-x: hidden !important;
+  width: 100%;
+  height: auto;
+}
+
+.waves .back-wave {
+  transform: translate(7%, 6%);
+}
+
+.waves .pattern7x7 {
+  left: 0;
+  transform: translate(0, 50%);
+  opacity: 0.5;
+  width: 170px;
+  height: 170px;
+  z-index: 100000 !important;
+}

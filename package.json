@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "my portfolio design",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kat",
+    "Portfolio",
+    "Developer",
+    "backEnd",
+    "Full-Stack"
+  ],
+  "author": "Mohamed Ahmed",
+  "license": "ISC"
+}
