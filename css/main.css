@@ -97,7 +97,7 @@ body {
 }
 
 .waves .back-wave {
-  transform: translate(7%, 6%);
+  transform: translate(7%, 0);
 }
 
 .waves .pattern7x7 {
