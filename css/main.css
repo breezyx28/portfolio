@@ -9,8 +9,14 @@
   --button-color: #6a69f5;
 }
 
+@font-face {
+  font-family: 'Cox';
+  src: url('../fonts/Stolzl\ Book.ttf');
+}
+
 html,
 body {
+  font-family: 'Cox';
   margin: 0;
   padding: 0;
   color: var(--primary-text) !important;
@@ -70,7 +76,7 @@ body {
   text-align: center;
   transform: translate(0%, 150%);
 }
-.hero .display-4 {
+.hero .display-2 {
   font-weight: 500;
 }
 
