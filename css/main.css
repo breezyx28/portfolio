@@ -5,7 +5,7 @@
   --secondary-text: #7f7f80;
   --call-action: #6b6af4;
   --primary-item: #4c4bef;
-  --secondary-item: #4c4befcc;
+  --secondary-item: #6e6ef1;
   --button-color: #6a69f5;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .bg-main {
-  position: absolute;
+  /* position: absolute; */
   background-color: var(--bg-color) !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -63,6 +63,10 @@ body {
   width: 80%;
 }
 
+.top-nav .menu ul li a {
+  font-size: 13px;
+}
+
 /* end of navbar */
 
 .full {
@@ -74,10 +78,18 @@ body {
 /* hero title */
 .hero {
   text-align: center;
-  transform: translate(0%, 150%);
+  transform: translate(0%, 110%);
 }
-.hero .display-2 {
+.hero .display {
+  font-size: 66px;
   font-weight: 500;
+  letter-spacing: -5px;
+}
+
+.hero h5 {
+  margin-top: -22px;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 /* Waves */
@@ -86,6 +98,7 @@ body {
   bottom: 0;
   width: 100%;
 }
+
 .waves .front-wave,
 .waves .back-wave,
 .waves .pattern7x7 {
@@ -103,8 +116,61 @@ body {
 .waves .pattern7x7 {
   left: 0;
   transform: translate(0, 50%);
-  opacity: 0.5;
-  width: 170px;
-  height: 170px;
+  opacity: 0.7;
+  width: 120px;
+  height: 120px;
   z-index: 100000 !important;
+}
+
+/* second Screen */
+.secondScreen {
+  background-color: white;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+.scr2 {
+  height: 100% !important;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.specilizing .hero {
+  width: 50vw;
+  transform: translate(0%, 70%);
+}
+
+.specilizing .hero .display-4 {
+  font-size: 2.5rem !important;
+}
+
+.cards {
+  height: 20rem;
+}
+.cards .card {
+  display: block;
+  background-color: var(--secondary-item);
+  border: none;
+  border-radius: 5px 0 10% 0;
+  transition: 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cards .card {
+  will-change: transition, border;
+}
+.cards .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white !important;
+  border-radius: 5px 0 9.5% 0;
+  transition: 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
+}
+.cards .card:hover::after {
+  background-color: var(--primary-item) !important;
+  border-radius: 5px 0 50% 0;
+  transition: 0.64s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
 }
