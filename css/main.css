@@ -171,7 +171,7 @@ body {
   color: white !important;
   bottom: -10px;
   left: -70px;
-  transition: 0.46s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.46s;
 }
 
 .cards .card::before {
@@ -205,5 +205,27 @@ body {
   left: -100px;
   width: 140px;
   height: 88px;
-  transition: 0.36s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* third screen */
+.thirdScreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.thirdScreen .holder {
+  width: 95% !important;
+  border-radius: 0 2% 7% 0;
+}
+
+.thirdScreen .holder .teamwork {
+  width: 90%;
+  height: 55vh !important;
+  object-fit: cover;
+}
+
+/* fourth screen */
+.fourthScreen {
+  width: 100vw;
+  height: 100vh;
 }
