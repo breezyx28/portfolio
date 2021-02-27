@@ -160,9 +160,20 @@ body {
   color: white !important;
   border-radius: 5px 0 50% 0;
 }
-.cards .card:hover > .contain > a {
-  color: white !important;
+
+.cards .card .contain {
+  position: absolute;
 }
+
+.cards .card:hover > .contain > a,
+.cards .card:hover .contain .pattern9x6 {
+  opacity: 1 !important;
+  color: white !important;
+  bottom: -10px;
+  left: -70px;
+  transition: 0.46s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .cards .card::before {
   content: '';
   position: absolute;
@@ -181,7 +192,18 @@ body {
 .cards .card .contain p {
   font-size: 11px;
 }
+
 .cards .card .contain a {
   color: var(--call-action) !important;
   font-size: 12px;
+}
+
+.cards .card .pattern9x6 {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  left: -100px;
+  width: 140px;
+  height: 88px;
+  transition: 0.36s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
