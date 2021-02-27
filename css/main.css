@@ -4,9 +4,9 @@
   --primary-text: #171717;
   --secondary-text: #7f7f80;
   --call-action: #6b6af4;
-  --primary-item: #4c4bef;
+  --primary-item: #4b4bef;
   --secondary-item: #6e6ef1;
-  --button-color: #6a69f5;
+  --button-color: #6969f5;
 }
 
 @font-face {
@@ -145,32 +145,43 @@ body {
 .cards {
   height: 20rem;
 }
+
 .cards .card {
   display: block;
-  background-color: var(--secondary-item);
+  background-color: white !important;
   border: none;
-  border-radius: 5px 0 10% 0;
+  border-radius: 5px 0 9.5% 0;
+  box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
   transition: 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.cards .card {
-  will-change: transition, border;
+.cards .card:hover {
+  background-color: var(--primary-item) !important;
+  color: white !important;
+  border-radius: 5px 0 50% 0;
 }
-.cards .card::after {
+.cards .card:hover > .contain > a {
+  color: white !important;
+}
+.cards .card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white !important;
-  border-radius: 5px 0 9.5% 0;
-  transition: 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
 }
-.cards .card:hover::after {
-  background-color: var(--primary-item) !important;
-  border-radius: 5px 0 50% 0;
-  transition: 0.64s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
+
+.cards .card:hover::before {
+  background-color: var(--secondary-item);
+  transition: 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: -1;
+}
+
+.cards .card .contain p {
+  font-size: 11px;
+}
+.cards .card .contain a {
+  color: var(--call-action) !important;
+  font-size: 12px;
 }
