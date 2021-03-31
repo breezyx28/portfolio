@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/wavesEffects.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
   </head>
 
   <body>
     <div class="bg-main">
       <div class="full">
+
         <div id="top-nav" class="top-nav">
           <div class="container d-flex justify-content-around align-items-center">
             <div class="icon col-6">
@@ -41,14 +43,16 @@
             </div>
           </div>
         </div>
-        <div class="container pt-2">
 
+
+        <div class="container pt-2">
 
           <!-- hero -->
           <div class="hero">
             <div class="display">I'm Mohamed Kat</div>
             <h5 class="light-text pt-4">Full-Stack Developer ...</h5>
           </div>
+
         </div>
 
         <!-- wave draw -->
@@ -484,6 +488,8 @@
       <script src="js/jquery.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
+    <script src="lib/gsap-public/gsap-public/src/all.js" type="module"></script>
+
     <!-- scroll behavior -->
     <script>
           var myNav = document.getElementById('top-nav');
@@ -499,6 +505,6 @@
               }
           });
     </script>
-    <!-- <script src="js/logoSlider.js"></script> -->
+    <script src="js/gsapAnime.js" type="module"></script>
   </body>
 </html>

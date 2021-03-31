@@ -70,13 +70,15 @@ body {
   z-index: 100000000;
   position: fixed;
   width: 100vw;
-  padding: 1rem;
+  padding: 1.4rem;
+  transition: 0.64s;
 }
 /* .top-nav-normal {
   background-color: transparent !important;
 } */
 .top-nav-scrolled {
-  background-color: white !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
   box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
   transition: 0.46s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -163,6 +165,7 @@ body {
 }
 
 .slideshow {
+  filter: grayscale(1);
   display: inline-block;
   white-space: nowrap;
   animation: floatText 25s infinite linear;
@@ -174,6 +177,7 @@ body {
   }
 }
 .slideshow:hover {
+  filter: grayscale(0);
   animation-play-state: paused;
 }
 
