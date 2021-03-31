@@ -63,13 +63,26 @@ body {
   /* filter: blur(0.3px); */
   outline: none !important;
 }
+.icon h1 {
+  font-weight: 900 !important;
+}
 .top-nav {
+  z-index: 100000000;
   position: fixed;
-  width: 80%;
+  width: 100vw;
+  padding: 1rem;
+}
+/* .top-nav-normal {
+  background-color: transparent !important;
+} */
+.top-nav-scrolled {
+  background-color: white !important;
+  box-shadow: -1.6rem 1rem 2.4rem -0.5rem rgba(45, 51, 109, 0.175) !important;
+  transition: 0.46s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .top-nav .menu ul li a {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /* end of navbar */
@@ -116,6 +129,7 @@ body {
 
 .waves .back-wave {
   transform: translate(7%, 0);
+  overflow-x: hidden !important;
 }
 
 .waves .pattern7x7 {
@@ -138,6 +152,31 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.secondScreen .scr2 .tools {
+  padding: 0 5rem 0 5rem;
+}
+
+.secondScreen .scr2 .tools img {
+  width: auto;
+  height: 60px;
+  object-fit: cover;
+}
+
+.slideshow {
+  display: inline-block;
+  white-space: nowrap;
+  animation: floatText 25s infinite linear;
+  padding-left: 100%; /*Initial offset, which places the text off-screen*/
+}
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
+}
+.slideshow:hover {
+  animation-play-state: paused;
+}
+
 .specilizing .hero {
   width: 50vw;
   transform: translate(0%, 70%);
@@ -307,7 +346,7 @@ body {
 /* fifth screen */
 .fifthScreen {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 .fifthScreen .peopleAre {
   margin-top: 70px;
@@ -407,4 +446,43 @@ body {
 .sixthScreen {
   width: 100vw;
   height: 100vh;
+  margin-top: 10%;
+}
+.sayHello {
+  color: white;
+  position: absolute;
+  width: 70vw;
+  height: 30vh;
+  transform: translateY(-50%);
+  border-radius: 5px 10px 58px 5px;
+}
+.helloBtn {
+  outline: none !important;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 2.5rem;
+}
+.helloBtn a {
+  font-weight: 600;
+}
+.helloPattern9x6 {
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  top: 190px;
+  left: -60px;
+  z-index: 2;
+  filter: invert(0.1);
+}
+
+.seventhScreen {
+  width: 100vw;
+  height: 10vh;
+}
+
+.footer {
+  font-size: medium;
+}
+.socialLinks li a {
+  color: var(--primary-item) !important;
 }
